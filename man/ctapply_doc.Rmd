@@ -1,0 +1,15 @@
+---
+title: "ctapply - an R package to measure central tendency and spread"
+author: "Anthony McCofie - anthonymccofie@usf.edu"
+date: "April 10, 2022"
+output:
+  pdf_document: default
+---
+
+```{r}
+  data(package="ctapply")
+  data("electricdata")
+  head(electricdata)
+  ?ctapply
+```
+
