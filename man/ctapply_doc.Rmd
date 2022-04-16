@@ -15,7 +15,7 @@ ctapply: **Object Summaries**
 The package calls specific methods to produce the result.  The user have option to print the result.
 
 
-The sample data used for this package: **Cost Function of Electricity Producers (1955)**
+The sample data used for this package is: **Cost Function of Electricity Producers (1955)**
 
 Below are the fields for the sample data used for the package
 ```{r echo=FALSE}
@@ -39,18 +39,24 @@ head(electricdata)
 
 **Arguments**
 
-**object**    : An object for which a summary is desired. This could be a numeric vector or a data frame dataset
+**object**    : An object for which a summary is desired. This could be a numeric vector or a data frame dataset.
 
-**np**        : The central tendency/spread method **(Mean, Median and ST)** to use
+**np**        : A boolean value **(TRUE/FALSE)**.  The statistics to use **(Mean, Median,...)**.
 
-**print**     : A boolean value **(TRUE/FALSE)**.  This provide an option for users to print result
+**print**     : A boolean value **(TRUE/FALSE)**.  This provide an option for users to print result.
 
 \vspace{6pt}
-The full usage syntax is:
+The full syntax usage:
 ```{r echo=TRUE}
 data1 <- c(4,5,6,5,6,5,6,4,6,5,6,4,5,4,5,6)
-ctapply(data1, np=TRUE, print=FALSE)
+ctapply(data1, np=TRUE, print=TRUE)
 ```
+\vspace{6pt}
+**Who should use this package**
+```{r echo=FALSE}
+cat("\n")
+```
+Why use **ctapply**? Use **ctapply** to quickly summarize data and identify what looks normal and what looks odd. The distribution of a variable shows what values the variable takes and how often the variable takes these values.
 
 
 
