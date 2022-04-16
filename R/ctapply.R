@@ -22,18 +22,19 @@
 
 
 ctapply <- function(x,np=TRUE,print=TRUE){
-  if(!np){
+  if(np){
     center <- mean(x);
     sd <- sd(x)
   }else{
     center <- median(x)
     spread <- mad(x)
   }
-  if (print & !np){
-    cat("Mean= ",center,"\n","SD= ",spread,"\n")
-  }else if (print & np){
-    cat("Median= ", center,"\n","MAD= ",spread,"\n")
+  if (np){ #print &
+    cat(" The Mean= ",center,"\n","Standard Deviation(spread) = ",sd,"\n")
+    center = cat("\nThe Center is: ",  center)
+  }else if (!np){
+    cat(" The Median= ", center,"\n","Standard Deviation(spread)  = ",spread,"\n")
+    spread = cat("\nThe Standard Deviation is: ",  spread)
   }
-  result <-list(center=center, spread=spread)
-  return(result)
+
 }

@@ -1,7 +1,7 @@
 Package: ctapply
 Type: Package
 Title: A simple implementation of a statistical function to return central tendency and spread
-Version: 0.0.0.9000
+Version: 0.0.0.9003
 Author@R: person("Anthony", "McCofie", email = "anthonymccofie@usf.edu", role = c("aut", "cre"))
 Maintainer: Anthony McCofie <anthonymccofie@usf.edu>
 Description: This package (ctapply=central tendency apply) return the measure of central tendency for a numeric vector x.
