@@ -29,7 +29,7 @@ ctapply <- function(x,np=TRUE,print=TRUE){
     center <- median(x)
     spread <- mad(x)
   }
-  if (np){ #print &
+  if (np){
     cat(" The Mean= ",center,"\n","Standard Deviation(spread) = ",sd,"\n")
     center = cat("\nThe Center is: ",  center)
   }else if (!np){

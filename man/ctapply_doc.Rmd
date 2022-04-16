@@ -15,15 +15,43 @@ ctapply: **Object Summaries**
 The package calls specific methods to produce the result.  The user have option to print the result.
 
 
-**Usage:**
-
-
-```{r setup, warning=FALSE, message=FALSE}
-library(ctapply)
-ctapply(electricdata$fuel)
-```
 The sample data used for this package: **Cost Function of Electricity Producers (1955)**
+
+Below are the fields for the sample data used for the package
 ```{r echo=FALSE}
+library(ctapply)
 head(electricdata)
 ```
+
+**Usage:**
+
+* You can use the package in two ways:
+  + Either with the data that comes with the package **electricdata** as shown below  
+  ```{r setup, warning=FALSE, message=FALSE}
+  ctapply(electricdata$fuel)
+  ```
+  + Or use your own data such as creating a numeric vector shown below:
+  ```{r warning=FALSE, message=FALSE}
+  data1 <- c(4,5,6,5,6,5,6,4,6,5,6,4,5,4,5,6)
+  ctapply(data1)
+  ```
+\newpage
+
+**Arguments**
+
+**object**    : An object for which a summary is desired. This could be a numeric vector or a data frame dataset
+
+**np**        : The central tendency/spread method **(Mean, Median and ST)** to use
+
+**print**     : A boolean value **(TRUE/FALSE)**.  This provide an option for users to print result
+
+\vspace{6pt}
+The full usage syntax is:
+```{r echo=TRUE}
+data1 <- c(4,5,6,5,6,5,6,4,6,5,6,4,5,4,5,6)
+ctapply(data1, np=TRUE, print=FALSE)
+```
+
+
+
 
