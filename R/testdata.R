@@ -32,3 +32,9 @@
 
 #devtools::build()
 
+#hist(electricdata$cost, breaks = 10, col = "orange", main = "Cost Function of Electricity Producers with Kernal Denisty plot", xlab = electricdata$cost)
+
+#plot(electricdata$cost, electricdata$fuel, main = "Scatter plot of Cost vs Fuel", xlab = "Cost", ylab = "fuel")
+#abline(lm(electricdata$fuel ~ electricdata$cost), col = "blue", lwd = 2)
+
+#pairs(electricdata, main = "Scatter plot matrix for fuelshare dataset")

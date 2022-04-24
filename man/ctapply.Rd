@@ -4,7 +4,7 @@
 \alias{ctapply}
 \title{Standard Central Tendency function}
 \usage{
-ctapply(x, np = TRUE, print = TRUE)
+ctapply(x, np = TRUE, print = TRUE, options = 3)
 }
 \arguments{
 \item{x}{numeric vector}
@@ -12,6 +12,8 @@ ctapply(x, np = TRUE, print = TRUE)
 \item{np}{logical TRUE/FALSE:  The user has a choice to which measure to calculate}
 
 \item{print}{logical TRUE/FALSE: The user has a choice to print the result}
+
+\item{options}{(1, 2, 3): Takes one of three values and return different output}
 }
 \description{
 This function can be used to get the measure of central tendency and spread for a numeric vector x

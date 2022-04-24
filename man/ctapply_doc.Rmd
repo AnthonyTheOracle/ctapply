@@ -1,7 +1,7 @@
 ---
 title: "ctapply - An R package to measure central tendency and spread"
 author: "Anthony McCofie - anthonymccofie@usf.edu"
-date: "April 15, 2022"
+date: "April 23, 2022"
 output:
   pdf_document: 
     number_sections: true
@@ -28,12 +28,12 @@ head(electricdata)
 * You can use the package in two ways:
   + Either with the data that comes with the package **electricdata** as shown below  
   ```{r setup, warning=FALSE, message=FALSE}
-  ctapply(electricdata$fuel)
+  ctapply(electricdata$fuel, options=2)
   ```
   + Or use your own data such as creating a numeric vector shown below:
   ```{r warning=FALSE, message=FALSE}
   data1 <- c(4,5,6,5,6,5,6,4,6,5,6,4,5,4,5,6)
-  ctapply(data1)
+  ctapply(data1, options=2)
   ```
 \newpage
 
@@ -49,7 +49,7 @@ head(electricdata)
 The full syntax usage:
 ```{r echo=TRUE}
 data1 <- c(4,5,6,5,6,5,6,4,6,5,6,4,5,4,5,6)
-ctapply(data1, np=TRUE, print=TRUE)
+ctapply(data1, np=TRUE, print=TRUE, options = 3)
 ```
 \vspace{6pt}
 **Who should use this package**
@@ -57,6 +57,11 @@ ctapply(data1, np=TRUE, print=TRUE)
 cat("\n")
 ```
 Why use **ctapply**? Use **ctapply** to quickly summarize data and identify what looks normal and what looks odd. The distribution of a variable shows what values the variable takes and how often the variable takes these values.
+
+\vspace{6pt}
+
+Analytics in a true sense is leveraged only through visualizations. R, as a statistical tool, offers strong visualization capabilities. So, the numerous options associated with charts is what makes them special. Each of the charts has its own application and the chart should be studied prior to applying it to a problem.
+
 
 
 
