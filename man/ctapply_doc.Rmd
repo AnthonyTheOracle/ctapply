@@ -45,6 +45,8 @@ head(electricdata)
 
 **print**     : A boolean value **(TRUE/FALSE)**.  This provide an option for users to print result.
 
+**options**     : Options takes 1, 2 or 3 as an argument **(options =1, 2, 3)**.  This provide additional output.
+
 \vspace{6pt}
 The full syntax usage:
 ```{r echo=TRUE}
