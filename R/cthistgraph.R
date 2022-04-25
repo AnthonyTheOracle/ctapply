@@ -11,6 +11,6 @@
 cthistgraph <- function(x){
   hist(x, breaks = 10,
        col = "orange",
-       main = "Cost Function of Electricity Producers with Kernal Denisty plot",
+       main = "Cost Function of Electricity Producers plot",
        xlab = x)
 }
