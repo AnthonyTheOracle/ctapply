@@ -1,6 +1,6 @@
 Package: ctapply
 Type: Package
-Title: A simple implementation of a statistical function to return central tendency and spread
+Title: A simple implementation of a statistical function to return central tendency and spread.  To accomplish this, additional funcations are created for visualization purposes
 Version: 0.0.0.9003
 Author@R: person("Anthony", "McCofie", email = "anthonymccofie@usf.edu", role = c("aut", "cre"))
 Maintainer: Anthony McCofie <anthonymccofie@usf.edu>
