@@ -12,8 +12,7 @@ ctapply: **Object Summaries**
 **Description:**
 
 **ctapply** is a package used to get summaries of basic statistics, such as central tendency(mean, median..) and standard deviation (spread). 
-The package uses specific methods to produce the result.  The user have option to print the result.  
-The package is supported by four additional functions that return graphical visualization.
+The package uses specific methods to produce the result.  The user have option to print the result. The package is supported by four additional functions that return graphical output.
 
 **ctbarplot()** return a bar graph.  Usage example **ctbarplot(electricdata$cost)**
  
@@ -23,11 +22,9 @@ The package is supported by four additional functions that return graphical visu
 
 **ctscattergraph** return scatter graph for the data. Usage example **ctscattergraph(electricdata$cost,electricdata$fuel)**  
 
+The sample data used for this package is the **Cost Function of Electricity Producers (1955)** data taken from **https://vincentarelbundock.github.io/Rdatasets/datasets.html**
 
-
-The sample data used for this package is: **Cost Function of Electricity Producers (1955)**
-
-Below are the fields for the sample data used for the package
+Below are the field names and first six rows for the sample data used in the package
 ```{r echo=FALSE}
 library(ctapply)
 head(electricdata)
